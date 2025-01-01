@@ -5,7 +5,7 @@ import * as path from 'path';
 async function run() {
   try {
     //let version = core.getInput('gh-cli-version');
-    let version = '2.64.0'
+    let version = core.getInput('gh-cli-version');
     if (version) {
       await getGhCli(version);
     }
@@ -33,7 +33,6 @@ async function downloadGhCli(version) {
   }
   const toolDirectoryName = `gh_${version}_linux_${architecture}`;
   const downloadUrl = `https://github.com/cli/cli/releases/download/v${version}/gh_${version}_linux_${architecture}.tar.gz`;
-  console.log(`downloading linux_${downloadUrl}`);
   try {
     const downloadPath = await tc.downloadTool(downloadUrl);
     const extractedPath = await tc.extractTar(downloadPath);
