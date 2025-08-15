@@ -12,3 +12,4 @@ Supports linux on amd64 and arm64 architectures.
   with:
     gh-cli-version: 2.32.0 # optional, see action.yml for current default
 ```
+
