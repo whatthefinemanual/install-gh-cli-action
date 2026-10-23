@@ -21,8 +21,8 @@
   },
   "homepage": "https://github.com/dev-hanz-ops/install-gh-cli-action#readme",
   "dependencies": {
-    "@actions/core": "^1.9.0",
-    "@actions/tool-cache": "^2.0.1"
+    "@actions/core": "^1.11.1",
+    "@actions/tool-cache": "^2.0.2"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.34.0"
